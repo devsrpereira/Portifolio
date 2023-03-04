@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    
 }
 :root{
     --cor01: #ffa500;
@@ -90,7 +89,7 @@ body.active{
     position: absolute;
     width: 80%;
     transition: .5s;
-    padding: 20px;
+    padding: 50px;
 }
 .form-box .signinform{
     transition-delay: .25s;

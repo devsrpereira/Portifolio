@@ -22,6 +22,9 @@ body{
     background: var(--cor01);
     transition: .5s;
 }
+h2, h3{
+    text-align: center
+}        
 body.active{
     background: var(--cor02);
 }
@@ -90,7 +93,7 @@ body.active{
     position: absolute;
     width: 80%;
     transition: .5s;
-    padding: 20px;
+    padding: 10%;
 }
 .form-box .signinform{
     transition-delay: .25s;

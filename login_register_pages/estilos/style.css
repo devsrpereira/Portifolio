@@ -22,9 +22,6 @@ body{
     background: var(--cor01);
     transition: .5s;
 }
-h2,h3{
-    text-align: center;
-}
 body.active{
     background: var(--cor02);
 }

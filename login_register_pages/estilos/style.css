@@ -77,6 +77,7 @@ body.active{
     font-size: 1.2em;
     font-weight: 500;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .orangeBG .box button{

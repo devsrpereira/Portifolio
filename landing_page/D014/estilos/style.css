@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    margin: 0;
+}
+
+body{
+    background-image: url(../imagens/fundo-madeira.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    position:relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+a{
+    text-decoration: none;
+    color: transparent;
+    text-align: top;
+    
+
+}
+
+section#telefone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    height: 627px;
+    width: 311px;   
+    background-image: url(../imagens/frame-iphone.png);
+    background-size: cover;
+}
+
+section>div.facebook{
+    
+    position: absolute;
+    right: 02%;
+    top: 35px;
+
+    width: 50px;
+    height: 50px;
+    background-image:url(../imagens/logo-facebook.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 50%;
+     
+}
+
+section>div.instagram{
+    
+    position: absolute;
+    right: 02%;
+    top: 105px;
+
+    width: 50px;
+    height: 50px;
+    background-image:url(../imagens/logo-instagram.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 50%;
+}
+
+section>div.youtube{
+    
+    position: absolute;
+    right: 02%;
+    top: 175px;;
+
+    width: 50px;
+    height: 50px;
+    background-image:url(../imagens/logo-youtube.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 50%;
+}
+
+section>div.twitter{
+    
+    position: absolute;
+    right: 02%;
+    top: 245px;;
+
+    width: 50px;
+    height: 50px;
+    background-image:url(../imagens/logo-twitter.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 50%;
+}
+
+section>div.github{
+    
+    position: absolute;
+    right: 02%;
+    top: 315px;;
+
+    width: 50px;
+    height: 50px;
+    background-image:url(../imagens/logo-github.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 50%;
+}
+
+section>div.home{
+    
+    position: absolute;
+    right: 02%;
+    top: 385px;
+
+    width: 50px;
+    height: 50px;
+    background-image:url(../imagens/logo-home.jpg);
+    
+    background-position: center center;
+    background-size: cover;
+
+    border-radius: 50%;
+}
+
+iframe{
+    background-image:url(../imagens/tela-home.jpg);
+    background-size: cover;
+    height: 467px;
+    width: 263px;
+    border: -10px;
+    padding: -10px;
+    margin: -10px;
+
+    
+}
+
+div.frame{
+    position: absolute;
+
+    top: 50.6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

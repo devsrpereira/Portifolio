@@ -1,0 +1,115 @@
+@charset "UFT-8";
+
+/*Fontes externas*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/*zerar sistema*/
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 1em;
+}
+
+/*variaves declaradas*/
+:root{
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Passion One', cursive;
+    --font03: 'Sriracha', cursive;
+}
+
+/*comandos gerais*/
+
+body{
+    background-color: lightgray;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    min-width:100vh ;
+    
+}
+
+
+/*Comandos cabeçalho*/
+
+header{
+    background-color: black;
+    height: auto;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    font-family: var(--font02);
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header p{
+    padding-bottom: 50px;
+    font-family: var(--font01);
+}
+
+/*Comandos para o Corpo*/
+
+section{
+    padding-left: 30px;
+    font-family: var(--font03);
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    
+}
+
+section.branco{
+    background-color: white;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+}
+
+section.transparente>p{
+    background-color: rgba(0, 0, 0, 0.418);
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}   
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.447);
+    background-attachment: fixed;
+}
+
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.447);
+    background-attachment: fixed
+}
+
+/*Comandos para o Rodapé*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font01);
+    padding: 10px;
+}

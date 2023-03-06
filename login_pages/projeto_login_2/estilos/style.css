@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/*GRADIENTE 05 - img005
+#FEFFFF
+#2E7958
+#244034
+*/
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ }
+
+ :root{
+    --cor01:#d3f4e6;
+    --cor02:#2E7958;
+    --cor03:#4a846b;
+    --cor04:#244034;
+    --cor05:#0f3b28;
+
+    --font01: Arial, Helvetica, sans-serif;
+    --font02: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font03: #;
+}
+
+body, html{
+    background-color: var(--cor03);
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    overflow: hidden;
+
+    background-color: var(--cor01);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 10px #00000073;
+
+    border: 2px solid white;
+    
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+    
+}
+
+section#login > div#imagem {
+    display: block;
+    background: var(--cor03) url(../imagens/img005.jpg) no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 200px;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: .8em;
+}
+
+form>div.campo{
+    background-color: var(--cor05);
+    display: block;
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    cursor: pointer;
+    color: var(--cor01);
+   
+}
+
+label{
+    display:none;
+}
+
+div.campo>i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    border: 0px;
+}
+
+div.campo>input{
+    width: calc(100% - 59px);
+    height: 40px;
+    border-radius: 0px 8px 8px 0px;
+    border: 2px solid var(--cor04);
+
+    
+    transform: translateY(-9.5px);
+
+}
+
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor03);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: var(--cor04);
+
+}
+
+form>a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    padding-top: 5px;
+    margin-top: 5px;
+    color:var(--cor04) ;
+    border: 1px solid var(--cor05);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form>a.botao:hover{
+    background-color: var(--cor03);
+    color: white;
+}
+
+form>a.botao>i{
+    font-size: .8em;
+}
+ 

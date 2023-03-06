@@ -1,6 +1,6 @@
-# Portifolio
+# Study Projects
 
-My best projects are here!
+Projects studied for practice and new knowledge!
 
 The login page with an amazin blur background - </strong>HTML and CSS </strong> <br>
 https://devsrpereira.github.io/Portifolio/project_blur_login/

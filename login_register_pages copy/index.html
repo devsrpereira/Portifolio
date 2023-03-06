@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In or Register</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <section class="container">
+        <aside class="orangeBG">
+            <nav class="box singin">
+                <h2>Already Have An Account?</h2>
+                <button class="signinbtn">Sign In</button>
+            </nav>
+            <nav class="box signup">
+                <h2>Create An Accont?</h2>
+                <button class="signupbtn">Register</button>
+            </nav>
+        </aside>
+        <article class="form-box">
+            <div class="form signinform">
+                <form id="signinform" >
+                    <h3>Sign In</h3>
+                    <input type="text" name="user" id="iuser" placeholder="Username">
+                    <input type="password" name="psw" id="ipsw"  placeholder="Password">
+                    <input type="submit" value="Sign In">
+                    <a href="#">Forget Password?</a>
+                </form>
+            </div>
+            <div class="form signupform">
+                <form id="signupform">
+                    <h3>Sign Up</h3>
+                    <input type="text" name="user" id="iuser" placeholder="Username">
+                    <input type="email" name="email" id="iemail" placeholder="Email Address">
+                    <input type="password" name="psw" id="ipsw" placeholder="Password">
+                    <input type="password" name="c_psw" id="ic_psw" placeholder="Confirm Password">
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </article>
+    </section>
+<script src="script/index.js"></script>
+
+<!--
+/*https://www.youtube.com/watch?v=RbXN8j37Fe4*/-->
+
+</body>
+</html>

@@ -15,21 +15,175 @@
     --bg-techs: #CB92B1;
 }
 body,html{
-    width:100vw;
+    width:100%;
     height: 100%;
     background: var(--body-bg-color);
     color: var(--text-color);
     display: flex;
-    flex-direction: ;    
+       
 }
-nav, section{
+nav{
     margin: 15px;
     display: flex;
     flex-direction: column;
 }
-section{
-    width: calc(100vw - 230px);
+
+@media screen and (max-width: 40rem) {
+    .grade{
+        grid-template-areas:  
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'; 
+        width: min(95%, 70rem);
+    }
 }
+@media screen and (min-width: 40.1rem) {
+    .grade{
+        grid-template-areas: 
+            'one one'
+            'two three'
+            'four four'
+            'five five';
+        grid-template-columns:
+        repeat(2,1fr);
+    }    
+    .elemento_span{
+            grid-column: span 2;
+    }    
+}
+.grade{
+    margin: 15px;
+    display: grid;
+    gap: 15px;
+    transition: ease-in-out .5s;
+    height: 70vh;
+    width: 100%;
+    
+}
+.grade:nth-child(1){
+    grid-area: one;
+}
+.grade:nth-child(2){
+    grid-area: two;
+}
+.grade:nth-child(3){
+    grid-area: three;
+}
+.grade:nth-child(4){
+    grid-area: four;
+}
+.grade:nth-child(5){
+    grid-area: five;
+}
+
+article{
+    background: var(--bg-cards);
+    border-radius: 10px;
+}
+
+.titulo{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+
+}
+.titulo h2{
+    grid-area: one;
+    padding: 0 10px;
+    width: 80%;
+}
+.titulo p{
+    grid-area: two;
+    text-align: right;
+    width: 20%;
+    margin-right: 10px;
+    font-size: .8rem;
+}
+
+.proj{
+    display: grid;
+    grid-template-areas: 
+            'two two two'
+            'three three three'
+            'four four five';
+        grid-template-columns:
+        repeat(3,1fr);
+    align-items: center;
+    gap: 8px;
+    height: 20vh;
+    padding: 10px;    
+}
+.proj .icone{
+    grid-area: one;
+}
+.proj .nome{
+    grid-column: span 2;
+    grid-area: two;
+    font-size: .8rem;
+}
+.proj .conteudo{
+    grid-area: three;
+}
+.proj .icone_baixo{
+    grid-column: span 2;
+    grid-area: four;
+    font-size: .6rem;
+}
+.proj .ling{
+    display: flex;
+    grid-area: five;
+    font-size: .7rem;
+    text-align: right;
+}
+.bolinha{
+    background: rgb(166, 204, 12);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    text-align: right;
+    margin: 2px 8px 0 10px;
+}
+.proj .conteudo{
+    font-size: .8rem;
+    text-rendering: 30px;
+}
+
+.detalhamento{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    height: 25vh;
+}
+.detalhamento .imagem{
+    width: 115px;
+}
+.detalhamento h3{
+    font-size: 1.2rem;
+}    
+.detalhamento .sub{
+    font-size: .6rem;
+    margin-bottom: 20px;
+}
+.detalhamento .normal{
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+.detalhamento h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+.foto2{
+    background: url(../imagens/fotoperfil.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
 .perfil{
     background: var(--bg-cards);
     border-radius: 10px;
@@ -98,12 +252,14 @@ button{
     background:var(--bg-techs);
 }
 
+
+
+
+/*
 .titulo{
-    background: var(--bg-cards);
     width: 100%;
     border-radius: 10px;
     padding: 5px;
-    display: flex;
 }
 .titulo p{
     position: absolute;
@@ -111,19 +267,11 @@ button{
     right: 30px;
     margin-top: 8px;
 }
-.projetos{
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
-}
 .proj1, .proj2{
-    display: flex;
-    background: var(--bg-cards);
     width: 100%;
     height: 100px;
     border-radius: 10px;
     padding: 5px;
-    margin-top: 15px;
 }
 .icone, .nome{
     
@@ -155,12 +303,9 @@ button{
     margin: 4px;
 }
 .detalhamento{
-    display: flex;
-    background: var(--bg-cards);
     width: 100%;
     border-radius: 10px;
     padding: 15px;
-    margin-top: 15px;
 }
 .detalhamento h3{
     margin-bottom: 5px;
@@ -173,17 +318,10 @@ p.normal{
     margin-top: 15px;
     font-size: 1em;
 }
-.foto2{
-    background: url(../imagens/fotoperfil.png);
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    margin-right: 20px;
-    border-radius: 10px;
-}
+
 h4{
     font-family: monospace;
     font-weight: 400;
     font-size: 1.2em;
 }
-
+/*

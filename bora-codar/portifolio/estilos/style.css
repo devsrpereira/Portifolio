@@ -48,42 +48,13 @@ nav{
         padding: 15px;    
     }
     .detalhamento .imagem{
-        grid-area: one;
-        grid-row: span 2;
-        align-self: center;
         padding-right: 15px;
     }
-    .detalhamento h3{
-        grid-area: two;
-        font-size: .9rem;
-    }     
-    .detalhamento .sub{
-        grid-area: three;
-        font-size: .6rem;
-    }     
-    .detalhamento .normal{
-        grid-area: four;
-        grid-column: span 2;
-        padding-top: 10px;
-        font-size: .8rem;
-    }     
-    .detalhamento h4{
-        grid-area: five;
-        grid-column: span 2;
-        font-size: .7rem;
-        font-weight: 300;
-        padding-top: 5px;
-    }     
     .detalhamento .foto2{
-        background: url(../imagens/fotoperfil.png);
         width: 60px;
         height: 60px;
-        background-size: cover;
-        border-radius: 10px;
     }
 }
-
-
 @media screen and (min-width: 40.1rem) {
     .grade{
         grid-template-areas: 
@@ -103,42 +74,10 @@ nav{
         'one five';
         padding: 15px;
         grid-template-columns: [one] 115px;
-           
-    }
-    .detalhamento .imagem{
-        grid-area: one;
-        align-self: center;
-        text-align: center;
-        width: max(115px);
-    }
-    .detalhamento h3{
-        grid-area: two;
-        font-size: .9rem;
-    }     
-    .detalhamento .sub{
-        grid-area: three;
-        font-size: .6rem;
-    }     
-    .detalhamento .normal{
-        grid-area: four;
-        padding-top: 10px;
-        font-size: .8rem;
-    }     
-    .detalhamento h4{
-        grid-area: five;
-        font-size: .7rem;
-        font-weight: 300;
-        padding-top: 5px;
-    }     
-    .elemento_span{
-            grid-column: span 2;
     }
     .detalhamento .foto2{
-        background: url(../imagens/fotoperfil.png);
         width: 100px;
         height: 100px;
-        background-size: cover;
-        border-radius: 10px;
     }   
 }
 
@@ -150,6 +89,9 @@ nav{
     height: 70vh;
     width: 100%;
     margin-bottom: 20px;
+}
+.elemento_span{
+    grid-column: span 2;
 }
 
 .grade:nth-child(1){
@@ -241,7 +183,34 @@ article{
 }
 
 
-
+.detalhamento .imagem{
+    grid-area: one;
+    align-self: center;
+}
+.detalhamento h3{
+    grid-area: two;
+    font-size: .9rem;
+}     
+.detalhamento .sub{
+    grid-area: three;
+    font-size: .6rem;
+}     
+.detalhamento .normal{
+    grid-area: four;
+    padding-top: 10px;
+    font-size: .8rem;
+}     
+.detalhamento h4{
+    grid-area: five;
+    font-size: .7rem;
+    font-weight: 300;
+    padding-top: 5px;
+}     
+.detalhamento .foto2{
+    background: url(../imagens/fotoperfil.png);
+    background-size: cover;
+    border-radius: 10px;
+} 
 
 .perfil{
     background: var(--bg-cards);

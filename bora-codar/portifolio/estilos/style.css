@@ -30,13 +30,15 @@ nav{
 
 @media screen and (max-width: 40rem) {
     .grade{
+        display: grid;
         grid-template-areas:  
-        'one'
-        'two'
-        'three'
-        'four'
-        'five'; 
-        width: min(95%, 70rem);
+        'one one'
+        'two two'
+        'three three'
+        'four four'
+        'five five';
+        grid-template-columns:
+        repeat(2,1fr); 
     }
     .detalhamento{
         display: grid;
@@ -88,25 +90,24 @@ nav{
     transition: ease-in-out .5s;
     height: 70vh;
     width: 100%;
-    margin-bottom: 20px;
 }
 .elemento_span{
     grid-column: span 2;
 }
 
-.grade:nth-child(1){
+.grade .titulo{
     grid-area: one;
 }
-.grade:nth-child(2){
+.grade .proj{
     grid-area: two;
 }
-.grade:nth-child(3){
-    grid-area: three;
+.grade .proj2{
+    grid-area:three;
 }
-.grade:nth-child(4){
+.grade .titulo2{
     grid-area: four;
 }
-.grade:nth-child(5){
+.grade .detalhamento{
     grid-area: five;
 }
 
@@ -115,7 +116,7 @@ article{
     border-radius: 10px;
 }
 
-.titulo{
+.titulo, .titulo2{
     height: 8vh;
     display: flex;
     align-items: center;
@@ -134,7 +135,7 @@ article{
 }
 
 
-.proj{
+.proj, .proj2 {
     display: grid;
     grid-template-areas: 
             'two two two'
@@ -147,23 +148,23 @@ article{
     height: 20vh;
     padding: 10px;    
 }
-.proj .icone{
+.proj .icone, .proj2 .icone{
     grid-area: one;
 }
-.proj .nome{
+.proj .nome, .proj2 .nome{
     grid-column: span 2;
     grid-area: two;
     font-size: .8rem;
 }
-.proj .conteudo{
+.proj .conteudo, .proj2 .conteudo{
     grid-area: three;
 }
-.proj .icone_baixo{
+.proj .icone_baixo, .proj2 .icone_baixo{
     grid-column: span 2;
     grid-area: four;
     font-size: .6rem;
 }
-.proj .ling{
+.proj .ling, .proj2 .ling{
     display: flex;
     grid-area: five;
     font-size: .7rem;
@@ -177,7 +178,7 @@ article{
     text-align: right;
     margin: 2px 8px 0 10px;
 }
-.proj .conteudo{
+.proj .conteudo, .proj2 .conteudo{
     font-size: .8rem;
     text-rendering: 30px;
 }

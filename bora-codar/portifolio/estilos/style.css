@@ -37,8 +37,6 @@ nav{
         'three three'
         'four four'
         'five five';
-        grid-template-columns:
-        repeat(2,1fr); 
     }
     .detalhamento{
         display: grid;

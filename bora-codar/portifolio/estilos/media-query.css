@@ -99,6 +99,9 @@
     .grade{
         grid-area: two;
     }
+    .proj, .proj2 {
+        grid-template-columns:70% 50% 50%; 
+    }
     .proj .feather, .proj2 .feather {
         height: 17px;
         width: none;
@@ -197,18 +200,7 @@
         'five five';
     }
     .proj, .proj2 {
-        display: grid;
-        grid-template-areas: 
-            'two two two'
-            'three three three'
-            'four five five';
-        
-        grid-template-columns:69% 15% 10%; 
-            
-        align-items: center;
-        gap: 8px;
-        height: 130px;
-        padding: 10px;    
+        grid-template-columns:65% 20% 10%; 
     }
     .proj .feather, .proj2 .feather {
         height: 17px;

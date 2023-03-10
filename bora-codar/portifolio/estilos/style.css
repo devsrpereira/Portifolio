@@ -14,86 +14,140 @@
     --bg-cards: #302F3D;
     --bg-techs: #CB92B1;
 }
-body,html{
-    width:100%;
-    height: 100%;
+
+html{
+  width: 100vw;  
+}
+body{
     background: var(--body-bg-color);
     color: var(--text-color);
     display: flex;
+    width: 100vw;
+    padding: 15px;
+            
 }
-nav{
-    margin: 15px;
+main{
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    width: 93vw;
 }
 
-@media screen and (max-width: 40rem) {
-    .grade{
-        display: grid;
-        grid-template-areas:  
-        'one one'
-        'two two'
-        'three three'
-        'four four'
-        'five five';
-    }
-    .detalhamento{
-        display: grid;
-        grid-template-areas: 
-        'one two'
-        'one three'
-        'four four'
-        'five five';
-        padding: 15px;    
-    }
-    .detalhamento .imagem{
-        padding-right: 15px;
-    }
-    .detalhamento .foto2{
-        width: 60px;
-        height: 60px;
-    }
+
+.lateral{
+    background: var(--bg-cards);
+    border: 1px solid #aeabbd7b;
+
+    display: grid;
+    padding: 15px;
+    grid-template-areas: 
+    'one four five'
+    'one four five'
+    'two four five'
+    'three four five'
+    'six six six';
+    
+    height: 235px;
+    width: 93vw;
+
+    grid-template-columns: 40% 4% 56%;
+
+    border-radius: 15px;
+    
+    align-items: center;
 }
-@media screen and (min-width: 40.1rem) {
-    .grade{
-        grid-template-areas: 
-            'one one'
-            'two three'
-            'four four'
-            'five five';
-        grid-template-columns:
-        repeat(2,1fr);
-    }
-    .detalhamento{
-        display: grid;
-        grid-template-areas: 
-        'one two'
-        'one three'
-        'one four'
-        'one five';
-        padding: 15px;
-        grid-template-columns: [one] 115px;
-    }
-    .detalhamento .foto2{
-        width: 100px;
-        height: 100px;
-    }   
+.lateral .foto1{
+    grid-area: one;
+
+    display: block;
+    margin: auto;
+
+    margin-top: 0;
+    transform: translateX(0%);
+    width: 90px;
+    height: 90px;
+}
+.lateral  h1{
+    grid-area: two;
+
+    font-size: 1em;
+    text-align: center;
+}
+.lateral  h5{
+    grid-area: three;
+
+    font-size: .6em;
+    text-align: center;
+}
+.lateral .colun1{
+    grid-area: four;
+
+}
+.feather{
+    height: 14px;
+    width: 14px;
+}
+.feather{
+    height: 14px;
+    width: none;
+}
+.lateral .colun2{
+    grid-area: five;
+    line-height: 1.55em;
+    font-size: .8rem;
+    padding-left: 5px;
+}
+.lateral .tech{
+    width: 89%;
+    padding: 5px;
+    margin-top: 5px;
+    grid-column: span 3;
+    border-top: 1px solid var(--text-color);
+}
+.lateral h2{
+    font-size: 1.2em;
+}
+.lateral ion-icon{
+    padding-top:5px;
+    font-size: 1.5em;
+}
+.lateral .foto1{
+    /*margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);*/
+    background: url("../imagens/fotoperfil.png");
+    background-size: cover;
+    border-radius: 50%;
+    /*width: 130px;
+    height: 130px;*/
+    box-shadow: 0 0 6px rgba(22, 250, 228, 0.42);
 }
 
 .grade{
-    margin: 15px;
     display: grid;
     gap: 15px;
-    transition: ease-in-out .5s;
-    height: 70vh;
-    width: 100%;
+    
+    grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
 }
 .elemento_span{
     grid-column: span 2;
 }
 
+.proj .feather, .proj2 .feather {
+    height: 14px;
+    width: none;
+}
+
 .grade .titulo{
     grid-area: one;
+    display: flex;
+    align-items: center;
+    height: 45px;
 }
 .grade .proj{
     grid-area: two;
@@ -103,21 +157,22 @@ nav{
 }
 .grade .titulo2{
     grid-area: four;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding-left: 10px;
 }
 .grade .detalhamento{
     grid-area: five;
 }
+
 
 article{
     background: var(--bg-cards);
     border-radius: 10px;
 }
 
-.titulo, .titulo2{
-    height: 8vh;
-    display: flex;
-    align-items: center;
-}
+
 .titulo h2{
     grid-area: one;
     padding: 0 10px;
@@ -135,39 +190,41 @@ article{
 .proj, .proj2 {
     display: grid;
     grid-template-areas: 
-            'two two two'
-            'three three three'
-            'four four five';
-        grid-template-columns:
-        repeat(3,1fr);
+        'two two two'
+        'three three three'
+        'four five five';
+    
+    grid-template-columns:79% 17% 1%; 
+        
     align-items: center;
     gap: 8px;
-    height: 20vh;
+    height: 130px;
     padding: 10px;    
 }
 .proj .icone, .proj2 .icone{
     grid-area: one;
 }
 .proj .nome, .proj2 .nome{
-    grid-column: span 2;
     grid-area: two;
     font-size: .8rem;
 }
 .proj .conteudo, .proj2 .conteudo{
     grid-area: three;
+    font-size: .8rem;
+    text-rendering: 30px;
 }
 .proj .icone_baixo, .proj2 .icone_baixo{
-    grid-column: span 2;
     grid-area: four;
     font-size: .6rem;
 }
 .proj .ling, .proj2 .ling{
-    display: flex;
     grid-area: five;
+    display: flex;
     font-size: .7rem;
     text-align: right;
 }
 .bolinha{
+    grid-area: five;
     background: rgb(166, 204, 12);
     width: 8px;
     height: 8px;
@@ -175,16 +232,31 @@ article{
     text-align: right;
     margin: 2px 8px 0 10px;
 }
-.proj .conteudo, .proj2 .conteudo{
-    font-size: .8rem;
-    text-rendering: 30px;
+
+
+
+.detalhamento{
+    display: grid;
+    grid-template-areas: 
+    'one two'
+    'one three'
+    'four four'
+    'five five';
+    padding: 15px;
+    grid-template-columns: 75px;    
 }
-
-
 .detalhamento .imagem{
     grid-area: one;
     align-self: center;
+    padding-right: 15px;
 }
+.detalhamento .foto2{
+    background: url(../imagens/fotoperfil.png);
+    background-size: cover;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+} 
 .detalhamento h3{
     grid-area: two;
     font-size: .9rem;
@@ -204,76 +276,3 @@ article{
     font-weight: 300;
     padding-top: 5px;
 }     
-.detalhamento .foto2{
-    background: url(../imagens/fotoperfil.png);
-    background-size: cover;
-    border-radius: 10px;
-} 
-
-.perfil{
-    background: var(--bg-cards);
-    border-radius: 10px;
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 15px;
-}
-.foto1{
-    margin-top: 10px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    background: url("../imagens/fotoperfil.png");
-    background-size: cover;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    box-shadow: 0 0 6px rgba(22, 250, 228, 0.42);
-}
-h1{
-    font-size: 1.2em;
-    margin-top: 5px;
-}
-h5{
-    font-size: .7em;
-    margin-top: 5px;
-}
-h2{
-    font-size: 1em;
-    margin: 5px; 
-}
-.redes_sociais{
-    display: flex;
-    background: var(--bg-cards);
-    border-radius: 10px;
-    width: 200px;
-    height: 230px;
-    margin-bottom: 15px;
-}
-.colun1{
-    margin: 10px;
-    line-height: 1.5em;
-}
-.colun2{
-    margin-top: 8px;
-    line-height: 2.4em;
-    font-size: .8rem;
-}
-.tech{
-    background: var(--bg-cards);
-    border-radius: 10px;
-    width: 200px;
-    padding: 5px;
-}
-.botao{
-    margin-left: 15px;
-    margin-bottom: 5px;
-}
-button{
-    padding:2px 5px;
-    border-radius: 10px;
-    font-family: monospace;
-    font-size: .8em;
-    font-weight: bold;
-    border: none;
-    background:var(--bg-techs);
-}

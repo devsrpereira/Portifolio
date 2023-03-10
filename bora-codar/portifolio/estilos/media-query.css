@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+
+/*Dispositivos Médios*/
+@media screen and (min-width: 416px) and (max-width: 769px) {
+   main{
+    display: grid;
+    grid-template-areas: 
+        'one two';
+        
+    grid-template-columns: 180px calc(96vw - 200px);
+    gap: 20px;    
+    }
+    .lateral{
+        grid-area: one;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-top: 15px;
+        height: 210px;
+        width: 180px;    
+        
+        border: none;
+    
+        grid-template-areas: 
+        'one one'
+        'two two'
+        'three three'
+        'four five'
+        'six six';
+
+        grid-template-columns: 30px ;
+        
+        border-radius: 10px;
+    }
+    .lateral .foto1{
+        grid-area: one;
+        width: 130px;
+        height: 130px;
+        
+    }
+    .lateral  h1{
+        grid-area: two;
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+    .lateral  h5{
+        grid-area: three;
+        font-size: .8em;
+        gap: none;
+    }
+    .lateral .colun1{
+        margin-top: 35px;
+        margin-left: -3px;
+        border-radius: 10px 0 0 10px;
+        padding:12px  10px;
+        background: var(--bg-cards);
+    }
+    .feather{
+        height: 23px;
+        width: none;
+    }
+    .lateral .colun2{
+        background: var(--bg-cards);
+        line-height: 1.9em;
+        font-size: .9rem;
+        padding: 10px 8px 10px 5px;
+        margin-top: 35px;
+        border-radius: 0 10px 10px 0;
+        
+    }
+    .lateral .tech{
+        background: var(--bg-cards);
+        grid-column: six;
+        width: 180px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        
+        border-top: none;
+    }
+    
+    .grade{
+        grid-area: two;
+    }
+    .proj, .proj2 {
+        grid-template-columns:70% 50% 50%; 
+    }
+    .proj .feather, .proj2 .feather {
+        height: 17px;
+        width: none;
+    }
+}
+
+/*Dispositivos Grandes*/
+@media screen and (min-width: 770px) {
+    main{
+    display: grid;
+    grid-template-areas: 
+        'one two';
+        
+    grid-template-columns: 180px calc(96vw - 200px);
+    gap: 20px;    
+    }
+    .lateral{
+        grid-area: one;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        padding-top: 15px;
+        height: 210px;
+        width: 180px;    
+        
+        border: none;
+    
+        grid-template-areas: 
+        'one one'
+        'two two'
+        'three three'
+        'four five'
+        'six six';
+
+        grid-template-columns: 30px ;
+        
+        border-radius: 10px;
+    }
+    .lateral .foto1{
+        grid-area: one;
+        width: 130px;
+        height: 130px;
+        
+    }
+    .lateral  h1{
+        grid-area: two;
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+    .lateral  h5{
+        grid-area: three;
+        font-size: .8em;
+        gap: none;
+    }
+    .lateral .colun1{
+        margin-top: 35px;
+        margin-left: -3px;
+        border-radius: 10px 0 0 10px;
+        padding:12px  10px;
+        background: var(--bg-cards);
+    }
+    .feather{
+        height: 23px;
+        width: none;
+    }
+    .lateral .colun2{
+        background: var(--bg-cards);
+        line-height: 1.9em;
+        font-size: .9rem;
+        padding: 10px 8px 10px 5px;
+        margin-top: 35px;
+        border-radius: 0 10px 10px 0;
+        
+    }
+    .lateral .tech{
+        background: var(--bg-cards);
+        grid-column: six;
+        width: 180px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        
+        border-top: none;
+    }
+    
+    .grade{
+        grid-area: two;
+
+        margin: 0px;
+        display: grid;
+        grid-template-areas:  
+        'one one'
+        'two three'
+        'four four'
+        'five five';
+    }
+    .proj, .proj2 {
+        grid-template-columns:65% 20% 10%; 
+    }
+    .proj .feather, .proj2 .feather {
+        height: 17px;
+        width: none;
+    }
+
+
+    .detalhamento{
+        display: grid;
+        grid-template-areas: 
+        'one two'
+        'one three'
+        'one four'
+        'one five';
+        padding: 15px;
+        grid-template-columns: [one] 115px;
+    }
+    .detalhamento .foto2{
+        width: 100px;
+        height: 100px;
+    }
+    .titulo, .titulo2{
+        height: 55px;
+    }
+}

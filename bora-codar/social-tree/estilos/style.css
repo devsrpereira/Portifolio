@@ -27,7 +27,6 @@ body, html{
     height: 213px;
     border-radius: 50%;
     border: 2px solid var(--purple);
-    cursor: pointer;
 }
 .foto{
     margin-top: 6px;
@@ -43,7 +42,11 @@ body, html{
 .insta{
     color: var(--purple);
     font-size: 16px;
-    margin: 10px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: fit-content;
 }
 
 main{
@@ -69,6 +72,7 @@ main > div{
 
 ion-icon{
     color: var(--purple);
-    margin: 50px 15px 0 15px;
-    font-size: 18px;
+    margin: 30px 15px 0 15px;
+    font-size: 25px;
+    cursor: pointer;
 }

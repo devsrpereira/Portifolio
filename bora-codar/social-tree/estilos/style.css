@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
+@media screen and (min-width: 415px) {
+    
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,14 +20,13 @@ body, html{
     height: 100%;
     text-align: center;
     background: var(--body-bg-color);
-    align-content: center;
-    align-self: auto;
-    margin: auto;
+    color: var(--purple);
 }
 
 .borda_externa{
     margin-top: 120px;
-    margin-left: 100px;
+    margin-left: 50vw;
+    transform: translateX(-50%);
     width: 213px;
     height: 213px;
     border-radius: 50%;
@@ -60,7 +63,6 @@ main > div{
     height: 49px;
     
     border: 1px solid var(--purple);
-    color: var(--purple);
 }
 .icone{
     top: 717px;
@@ -69,5 +71,4 @@ ion-icon{
     color: var(--purple);
     margin: 50px 15px 0 15px;
     font-size: 18px;
-
 }

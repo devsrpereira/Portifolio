@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: var(--body-bg-color);
+    align-content: center;
+    align-self: auto;
+    margin: auto;
+}
+
+.borda_externa{
+    margin-top: 120px;
+    margin-left: 100px;
+    width: 213px;
+    height: 213px;
+    border-radius: 50%;
+    border: 2px solid var(--purple);
+}
+.foto{
+    margin-top: 6px;
+    margin-left: 7px;
+    background: url(../imagens/foto_perfil.png);
+    background-size:cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: -2px -15px 30px 8px inset var(--body-bg-color);
+}
+.insta{
+    color: var(--purple);
+    font-size: 16px;
+    margin: 10px;
+}
+main{
+    display: inline-block;
+    align-content: center;
+}
+
+main > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+    font-weight: 600 ;
+    width: 326px;
+    height: 49px;
+    
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+.icone{
+    top: 717px;
+}
+ion-icon{
+    color: var(--purple);
+    margin: 50px 15px 0 15px;
+    font-size: 18px;
+
+}

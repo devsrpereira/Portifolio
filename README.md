@@ -9,5 +9,7 @@ An Animated Sign In and Register page - </strong>HTML, CSS and JavaScript </stro
 Responsive Slider  - </strong>HTML and CSS </strong> (https://devsrpereira.github.io/Study-Project/login_pages/responsive_slider)<br> 
 
 Portifolio - Desafio - Bora Codar </strong>HTML and CSS </strong> (https://devsrpereira.github.io/Study-Project/bora-codar/portifolio)<br> 
+
+Landing Page - Desafio - Bora Codar </strong>HTML and CSS </strong> (https://devsrpereira.github.io/Study-Project/bora-codar/social-tree)
   
 

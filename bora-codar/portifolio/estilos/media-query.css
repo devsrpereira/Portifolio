@@ -71,6 +71,7 @@
         border-radius: 10px 0 0 10px;
         padding:12px  10px;
         background: var(--bg-cards);
+        height: 210px;
     }
     .feather{
         height: 23px;
@@ -83,6 +84,7 @@
         padding: 10px 8px 10px 5px;
         margin-top: 35px;
         border-radius: 0 10px 10px 0;
+        height: 210px;
         
     }
     .lateral .tech{
@@ -163,6 +165,7 @@
         border-radius: 10px 0 0 10px;
         padding:12px  10px;
         background: var(--bg-cards);
+        height: 210px;
     }
     .feather{
         height: 23px;
@@ -175,7 +178,7 @@
         padding: 10px 8px 10px 5px;
         margin-top: 35px;
         border-radius: 0 10px 10px 0;
-        
+        height: 210px;
     }
     .lateral .tech{
         background: var(--bg-cards);

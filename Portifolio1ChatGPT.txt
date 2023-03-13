@@ -9,3 +9,44 @@
 9 - Site de viagens: https://www.wix.com/website-template/view/html/1745
 10 - Página de destino de um produto: https://www.wix.com/website-template/view/html/2067
 
+
+
+- Lateral e Fundo em Cedro
+- Braço com Reforço em Jacaranda 
+- Escala em Ébano 
+- Caixa de 10 cm
+- Tampo em Abeto Alemão
+- Captação Dupla Jefferson Barros Luthier com Interruptor de agudos
+- Tarraxa Rozini P Gross 18D Cobre Velho
+
+ 
+
+Tabua 1 (300x30x3)
+-2 pçs 149,5 x 30 x 3
+
+Tabua 2 (300x30x3)
+-2 pçs 149,5 x 20 x 3
+-1 pçs 150 x 9 x 3
+-3 pçs 41 x 9 x 3
+
+Tabua 3 (300x30x3)
+-1 pç 198 x 30 x 3
+-1 pç 100 x 30 x 3
+
+Tabua 4 (300x30x3)
+-1 pç 198 x 20 x 3
+-1 pç 100 x 20 x 3
+-1 pç 149,5 x 9 x 3
+-3 pçs 149,5 x 3 x 3
+
+Tabua 5 (300x30x3)
+-3 pçs 47,5 x 30 x 3
+-3 pçs 47,5 x 20 x 3
+-12 pçs 47,5 x 4 x 3
+
+
+
+https://devsrpereira.github.io/Portifolio/projeto_login/
+
+//variavel.push(valor) adiciona o valor entre parenteses como ultimo elemento da array
+console.log(`Adicionando o valor 4 no vetor ${num.push(4)} / ficamos com os seguintes valores: ${num}`)
